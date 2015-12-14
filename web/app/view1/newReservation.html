@@ -1,0 +1,26 @@
+
+<div class="well well-lg">
+    <h3>Ticket Info</h3>
+    <br>
+    <h5>Airline: {{flight.airline}}</h5>
+    <br>
+    <h5>FlightID: {{newReservationData.flightID}}</h5>
+    <br>
+    <h5>Origin: {{newReservationData.Origin}}</h5>
+    <br>
+    <h5>Destination: {{newReservationData.Destination}}</h5>
+    <br>
+    <h5>Date: {{newReservationData.Date}}</h5>
+    <br>
+    <h5>Flight Time (min): {{newReservationData.FlightTime}}</h5>
+    <br>
+    <h5>Number of Seats: {{newReservationData.numberOfSeats}}</h5>
+    <br>
+    <h5>Reservee Name: {{newReservationData.ReserveeName}}</h5>
+    <br>
+    <h4>Name of Other Passengers:</h4>
+    <div ng-repeat="passengers in newReservationData.Passengers">
+        <h5>Full Name: {{passengers.firstName}} {{passengers.lastName}}</h5>
+        <br>
+    </div>
+</div>

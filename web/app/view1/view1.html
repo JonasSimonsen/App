@@ -1,0 +1,122 @@
+<br>
+<form class="navbar-form navbar-left" role="search">
+    <div class="form-group">
+        <select name="From" style="width:20em;" class="form-control" ng-model="origin" required="">
+            <option value="" disabled selected hidden>Your favourite airport</option>
+            <option value="AMS">Amsterdam - Amsterdam Airport Schiphol (AMS), Netherlands</option> 
+            <option value="BKK">Bangkok, Suvarnabhumi International (BKK), Thailand</option> 
+            <option value="BCN">Barcelona (BCN), Spain</option>
+            <option value="PEK">Beijing (PEK), China</option> 
+            <option value="SXF">Berlin, Schoenefeld (SXF), Germany</option> 
+            <option value="TXL">Berlin, Tegel (TXL), Germany</option> 
+            <option value="CPH">Copenhagen - Copenhagen Airport (CPH), Denmark</option>
+            <option value="DXB">Dubai - Dubai International Airport (DXB), United Arab Emirates</option> 
+            <option value="DUB">Dublin - Dublin International Airport (DUB), Ireland</option>
+            <option value="FRA">Frankfurt/Main - Frankfurt Airport (Rhein-Main-Flughafen) (FRA), Germany</option> 
+            <option value="HEL">Helsinki - Vantaa (HEL), Finland</option> 
+            <option value="HKG">Hong Kong - International Airport (HKG), Hong Kong</option>                       
+            <option value="LAS">Las Vegas (NV) (LAS), USA</option> 
+            <option value="LHR">London - Heathrow (LHR), United Kingdom</option> 
+            <option value="LGW">London - Gatwick (LGW), United Kingdom</option> 
+            <option value="STN">London - Stanstead (STN), United Kingdom</option>
+            <option value="LAX">Los Angeles (CA) - International (LAX), USA</option> 
+            <option value="MAD">Madrid - Barajas (MAD), Spain</option> 
+            <option value="MIA">Miami (FL) (MIA), USA</option> 
+            <option value="JFK">New York - John F. Kennedy (JFK), USA</option>
+            <option value="OSL">Oslo - Oslo Airport, Gardermoen (OSL), Norway</option> 
+            <option value="CDG">Paris - Charles de Gaulle (CDG), France</option> 
+            <option value="PRG">Prague - Ruzyne (PRG), Czech Republic</option> 
+            <option value="ROM">Rome (ROM), Italy</option> 
+            <option value="SFO">San Francisco - International Airport, SA (SFO), USA</option> 
+            <option value="STO">Stockholm (STO), Sweden</option> 
+            <option value="TYO">Tokyo (TYO), Japan</option>
+            <option value="YYZ">Toronto - Toronto Pearson International Airport (YYZ), Canada</option> 
+            <option value="YVR">Vancouver - Vancouver International (YVR), Canada</option> 
+            <option value="BWI">Washington DC - Baltimore Washington International (BWI), USA</option> 
+            <option value="VIE">Wien (Vienna) - Vienna International (VIE), Austria</option> 
+            <option value="ZRH">Zurich (Zürich) - Kloten (ZRH), Switzerland</option>
+        </select>
+        <select name="To" style="width:20em;" class="form-control" ng-model="destination" required="">
+            <option value="" disabled selected hidden>Where do you want to go?</option>
+            <option value="null">Any Destination</option>
+            <option value="AMS">Amsterdam - Amsterdam Airport Schiphol (AMS), Netherlands</option> 
+            <option value="BKK">Bangkok, Suvarnabhumi International (BKK), Thailand</option> 
+            <option value="BCN">Barcelona (BCN), Spain</option>
+            <option value="PEK">Beijing (PEK), China</option> 
+            <option value="SXF">Berlin, Schoenefeld (SXF), Germany</option> 
+            <option value="TXL">Berlin, Tegel (TXL), Germany</option> 
+            <option value="CPH">Copenhagen - Copenhagen Airport (CPH), Denmark</option>
+            <option value="DXB">Dubai - Dubai International Airport (DXB), United Arab Emirates</option> 
+            <option value="DUB">Dublin - Dublin International Airport (DUB), Ireland</option>
+            <option value="FRA">Frankfurt/Main - Frankfurt Airport (Rhein-Main-Flughafen) (FRA), Germany</option> 
+            <option value="HEL">Helsinki - Vantaa (HEL), Finland</option> 
+            <option value="HKG">Hong Kong - International Airport (HKG), Hong Kong</option>                       
+            <option value="LAS">Las Vegas (NV) (LAS), USA</option> 
+            <option value="LHR">London - Heathrow (LHR), United Kingdom</option> 
+            <option value="LGW">London - Gatwick (LGW), United Kingdom</option> 
+            <option value="STN">London - Stanstead (STN), United Kingdom</option>
+            <option value="LAX">Los Angeles (CA) - International (LAX), USA</option> 
+            <option value="MAD">Madrid - Barajas (MAD), Spain</option> 
+            <option value="MIA">Miami (FL) (MIA), USA</option> 
+            <option value="JFK">New York - John F. Kennedy (JFK), USA</option>
+            <option value="OSL">Oslo - Oslo Airport, Gardermoen (OSL), Norway</option> 
+            <option value="CDG">Paris - Charles de Gaulle (CDG), France</option> 
+            <option value="PRG">Prague - Ruzyne (PRG), Czech Republic</option> 
+            <option value="ROM">Rome (ROM), Italy</option> 
+            <option value="SFO">San Francisco - International Airport, SA (SFO), USA</option> 
+            <option value="STO">Stockholm (STO), Sweden</option> 
+            <option value="TYO">Tokyo (TYO), Japan</option>
+            <option value="YYZ">Toronto - Toronto Pearson International Airport (YYZ), Canada</option> 
+            <option value="YVR">Vancouver - Vancouver International (YVR), Canada</option> 
+            <option value="BWI">Washington DC - Baltimore Washington International (BWI), USA</option> 
+            <option value="VIE">Wien (Vienna) - Vienna International (VIE), Austria</option> 
+            <option value="ZRH">Zurich (Zürich) - Kloten (ZRH), Switzerland</option> 
+        </select>
+    </div>
+    <br>
+    <br>
+    <input ng-model="date" style="width:20em;" type="date" required="" class="form-control">
+    <select name="nop" style="width:20em;" class="form-control" ng-model="nop" required="">
+        <option value="" disabled selected hidden>Number of passengers</option>
+        <option value="1">1</option> 
+        <option value="2">2</option> 
+        <option value="3">3</option> 
+        <option value="4">4</option> 
+        <option value="5">5</option>
+        <option value="6">6</option> 
+    </select>
+    <button type="submit" class="btn btn-primary" ng-click="search()">Search</button>
+</form>
+<br>
+<br>
+<br>
+<hr>
+<table class="table">
+    <thead>
+    <th>Airline</th>
+    <th>Number of Tickets</th>
+    <th>Date</th>
+    <th>Price</th>
+    <th>ID</th>
+    <th>Travel Time</th>
+    <th>Departure Airport</th>
+    <th>Destination Airport</th>
+</thead>
+<tbody>
+    <tr ng-repeat="data in data">
+        <td>{{data.airline}} </td>
+        <td>{{data.numberOfSeats}} </td>
+        <td>{{data.date}} </td>
+        <td>{{data.totalPrice}} </td>
+        <td>{{data.flightID}} </td>
+        <td>{{data.traveltime}} </td>       
+        <td>{{data.origin}} </td>
+        <td>{{data.destination}} </td>
+
+        <td><a ng-click="addFlight(data)" class="btn btn-primary" type="button">Reserve</a></td>
+    </tr>
+
+
+</tbody>
+</table>
+<div class="alert alert-danger" role="alert" ng-show="error">{{error}}</div>
