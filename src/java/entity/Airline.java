@@ -5,9 +5,8 @@
  */
 package entity;
 
+import java.io.Serializable;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
@@ -15,41 +14,33 @@ import javax.persistence.Id;
  * @author Jonas
  */
 @Entity
-public class Airline
-{
+public class Airline implements Serializable {
+
     @Id
     private String url;
     private String airlineName;
 
-    public Airline()
-    {
+    public Airline() {
     }
 
-    public Airline(String url, String airlineName)
-    {
+    public Airline(String url, String airlineName) {
         this.url = url;
         this.airlineName = airlineName;
     }
 
-    public String getAirlineName()
-    {
+    public String getAirlineName() {
         return airlineName;
     }
 
-    public void setAirlineName(String airlineName)
-    {
+    public void setAirlineName(String airlineName) {
         this.airlineName = airlineName;
     }
-    
-  public String getUrl()
-    {
+
+    public String getUrl() {
         return url;
     }
 
-    public void setUrl(String url)
-    {
+    public void setUrl(String url) {
         this.url = url;
     }
-    
-    
 }

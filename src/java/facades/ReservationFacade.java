@@ -6,6 +6,7 @@
 package facades;
 
 import deploy.DeploymentConfiguration;
+import entity.DataLogger;
 import entity.Passengers;
 import entity.Reservation;
 import java.util.List;
@@ -106,5 +107,21 @@ public class ReservationFacade
         {
             em.close();
         }
+    }
+    
+        public void saveLoggerDataNoDest(String origin, String date){
+        EntityManager em = emf.createEntityManager();
+        DataLogger data = new DataLogger(origin, date);
+        em.getTransaction().begin();
+        em.persist(data);
+        em.getTransaction().commit();
+    }
+    
+    public void saveLoggerDataWithDest(String origin, String destination, String date){
+        EntityManager em = emf.createEntityManager();
+        DataLogger data = new DataLogger(origin, destination, date);
+        em.getTransaction().begin();
+        em.persist(data);
+        em.getTransaction().commit();
     }
 }

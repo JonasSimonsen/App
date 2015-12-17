@@ -103,6 +103,7 @@ public class ReservationApi
         }
 
         rf.saveReservation(r, passengers);
+        rf.saveLoggerDataWithDest(r.getOrigin(), r.getDestination(), r.getDato());
 
         return Response.ok(new Gson().toJson(json)).build();
     }

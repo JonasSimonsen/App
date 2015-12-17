@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Jeanette
+ * @author Jonas
  */
 public class RequestFacadeTest
 {
@@ -58,27 +58,4 @@ public class RequestFacadeTest
 
         assertEquals("[Flight{airlineName=AngularJS Airline, date=2016-01-04T19:00:00.000Z, numberOfSeats=3, totalPrice=150.0, fligthID=COL3256, traveltime=90, destination=STN, origin=CPH}, Flight{airlineName=AngularJS Airline, date=2016-01-04T10:00:00.000Z, numberOfSeats=3, totalPrice=195.0, fligthID=COL3256, traveltime=90, destination=STN, origin=CPH}]", f.toString());
     }
-
-//    @Test(expected=IOException.class)
-//    public void getFlightWithoutDestinationWrongData() throws InterruptedException, ExecutionException
-//    {
-//        rf = new RequestFacade();
-//        origin = "hej";
-//        date = "2016-01-04T23:00:00.000Z";
-//        numberOfPassangers = 3;
-//
-//        f = rf.getFlights(origin, date, numberOfPassangers);
-//    }
-//
-//    @Test(expected=IOException.class)
-//    public void getFlightWithDestinationWrongData() throws InterruptedException, ExecutionException
-//    {
-//        rf = new RequestFacade();
-//        origin = "CPH";
-//        destination = "hej";
-//        date = "2016-01-04T23:00:00.000Z";
-//        numberOfPassangers = 3;
-//
-//        f = rf.getFlights(origin, destination, date, numberOfPassangers);
-//    }
 }

@@ -1,0 +1,223 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 17, 2015, 12:31:50 PM
+    Author     : Anil Kumar
+*/
+
+
+@media (max-width: 1280px){
+    .result_section {
+        background: rgba(0, 0, 0, 0) url("../img/result_bg.png") no-repeat scroll 0 0 / cover ;
+        display: block;
+        float: left;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        position: relative;
+        top: 17em;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px){
+    input.form-control.inline_input {
+        border-radius: 0;
+        height: 27px;
+        margin-top: 14px;
+        width: 127px;
+    }
+    .contant {
+        float: left;
+        position: relative;
+        top: -4em;
+        width: 100%;
+    }
+    .search_bg {
+        background: #009999 none repeat scroll 0 0;
+        float: left;
+        padding-bottom: 4em;
+        position: relative;
+        top: 1em;
+        width: 100%;
+    }
+    .result_section {
+        background: rgba(0, 0, 0, 0) url("../img/result_bg.png") no-repeat scroll 0 0 / cover ;
+        display: block;
+        float: left;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        position: relative;
+        top: 6em;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 980px){
+    .form {
+        margin-left: 13.3em;
+        margin-bottom: 1em;
+    }
+    .contant {
+        float: left;
+        position: relative;
+        top: -2em;
+        width: 100%;
+    }
+    .search_bg {
+        background: #009999 none repeat scroll 0 0;
+        float: left;
+        padding-bottom: 2em;
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+    input.form-control.inline_input {
+        border-radius: 0;
+        height: 27px;
+        margin-top: 14px;
+        width: 175px;
+    }
+    .result_section {
+        background: rgba(0, 0, 0, 0) url("../img/result_bg.png") no-repeat scroll 0 0 / cover ;
+        display: block;
+        float: left;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        position: relative;
+        top: 3em;
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px){
+    .result_section {
+        background: rgba(0, 0, 0, 0) url("../img/result_bg.png") no-repeat scroll 0 0 / cover ;
+        display: block;
+        float: left;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px){
+    .form {
+        margin-bottom: 1em;
+        margin-left: 0;
+        margin-top: 0em;
+    }
+    input.form-control.inline_input {
+        border-radius: 0;
+        float: left;
+        height: 27px;
+        margin-right: 15px;
+        margin-top: 14px;
+        width: 200px;
+    }
+    .menu li {
+        border-bottom: 2px solid rgb(20, 16, 15);
+        border-top: 2px solid rgb(20, 16, 15);
+        display: block;
+    }
+    .menu {
+        list-style-type: none;
+        padding: 0;
+        position: relative;
+        width: 100%;
+    }
+    .contant {
+        float: left;
+        position: relative;
+        top: 0.5em;
+        width: 100%;
+    }
+        .plane_icon {
+        background: rgba(153, 102, 255, 0.4) none repeat scroll 0 0;
+        border-radius: 100%;
+        margin: 7em auto 0;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        width: 95px;
+    }
+    .plane_icon img {
+        display: inline-block;
+        width: 50%;
+    }
+    .search_bg {
+        background: #009999 none repeat scroll 0 0;
+        float: left;
+        padding-bottom: 2em;
+        position: relative;
+        top: 2em;
+        width: 100%;
+    }
+    .column {
+        float: left;
+        margin-bottom: 5px;
+        margin-right: 15px;
+        margin-top: 5px;
+        width: 3%;
+    }
+    .input_field {
+        border-radius: 0;
+        font-family: "Open Sans";
+        font-weight: 600;
+        margin-top: 10px;
+        width: 100% !important;
+    }
+    .btn_search {
+        background: #ff6633 none repeat scroll 0 0;
+        border-radius: 20px;
+        color: #fff;
+        font-family: "Open Sans";
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .main_slider {
+        display: none;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+    .main_section {
+        background: rgba(0, 0, 0, 0) url("../img/slider_bg.png") repeat scroll 0 0;
+        float: left;
+        width: 100%;
+    }
+    .plane_icon {
+        background: rgba(153, 102, 255, 0.4) none repeat scroll 0 0;
+        border-radius: 100%;
+        margin: 0 auto 0;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        width: 95px;
+    }
+    .result_section {
+        background: rgba(0, 0, 0, 0) url("../img/result_bg.png") no-repeat scroll 0 0 / cover ;
+        display: block;
+        float: left;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        position: relative;
+        top: 1em;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    input.form-control.inline_input {
+        border-radius: 0;
+        float: left;
+        height: 27px;
+        margin-right: 15px;
+        margin-top: 14px;
+        width: 192px;
+    }
+}
+

@@ -59,6 +59,7 @@ public class DeploymentConfiguration implements ServletContextListener
             both.AddRole(adminRole);
             
             Airline a = new Airline("http://angularairline-plaul.rhcloud.com/", "AngularJS Airline");
+            Airline b = new Airline("http://localhost:8080/semesterSeedSP/", "Flights Airline");
             
             try
             {
@@ -71,6 +72,7 @@ public class DeploymentConfiguration implements ServletContextListener
                 em.persist(both);
                 
                 em.persist(a);
+                em.persist(b);
                 em.getTransaction().commit();
             } finally
             {

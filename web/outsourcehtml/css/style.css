@@ -1,0 +1,297 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 16, 2015, 6:59:24 PM
+    Author     : Anil Kumar
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,300,600,700,800);
+
+body{
+    font-size: 14px;
+}
+.main_section{
+    width: 100%;
+    float: left;
+}
+.main_slider{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    float: left;
+}
+.main_header{
+    width: 100%;
+    float: left;
+    background: rgba(0, 0, 0, 0.9);
+    position: relative;
+    top: 0em;
+}
+.logo{
+    width: 100%;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.logo_img{
+    width: 100%;
+}
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0px;
+  border: none;
+  border-radius: 0;
+}
+.menu{
+    list-style-type: none;
+    position: relative;
+    padding: 0;
+}
+.menu li{
+    display: inline-block;
+    border-top: 2px solid rgb(20, 16, 15);
+    border-bottom: 2px solid rgb(20, 16, 15);
+    /* margin-right: 20px; */
+}
+.menu li a{
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Open Sans';
+}
+.menu li a:hover{
+    background: transparent;
+    color: #fff;
+}
+.menu li.active, .menu li:hover{
+    border-top: 2px solid #ff6633;
+    border-bottom:  2px solid #ff6633;
+}
+
+div#navbar {
+  padding: 0;
+}
+
+input.form-control.inline_input {
+  height: 27px;
+  border-radius: 0;
+  width: 160px;
+  margin-top: 14px;
+}
+
+button.login_btn {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin-top: 12px;
+  float: right;
+  margin-left: 5px;
+}
+
+button.navbar-toggle {
+  border: solid 1px #8F7EFF;
+}
+
+span.icon-bar {
+  border: 1px solid #8C7BFA;
+  height: 2px;
+  width: 22px;
+}
+.contant{
+    width: 100%;
+    float: left;
+    position: relative;
+    top: 0em;
+}
+
+.plane_icon {
+  background: rgba(153, 102, 255, 0.4);
+  width: 160px;
+  border-radius: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  margin-top: 7em;
+}
+
+.plane_icon img {
+  /* width: 100%; */
+  display: inline-block;
+}
+.title{
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 34px;
+    font-family: 'Open Sans';
+    letter-spacing: -0.5px;
+    margin: 0 auto;
+    padding: 0 80px;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    margin-top: 20px;
+}
+.search_bg{
+    width: 100%;
+    float: left;
+    background: #009999;
+    position: relative;
+    top: 10em;
+    padding-bottom: 4em;
+    display: inline-block;
+}
+
+.tab_flight{
+    float: left;
+    padding: 10px;
+    background: #6666ff;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #fff;
+}
+
+.input_field {
+  border-radius: 0;
+  width: 100% !important;
+  font-family: 'Open Sans';
+  font-weight: 600;
+}
+
+.pad-input {
+  padding-left: 0;
+}
+
+.column {
+  width: 3%;
+  float: left;
+  margin-right: 15px;
+  margin-top: 5px;
+  /* margin-left: 10px; */
+}
+
+.left-inner-addon {
+  position: relative;
+}
+.left-inner-addon i {
+  position: absolute;
+  padding: 5px 6px;
+  pointer-events: none;
+}
+.left-inner-addon input {
+  padding-left: 30px;
+}
+.left-inner-addon select {
+  padding-left: 30px;
+}
+
+
+.icon img {
+  width: 15px;
+}
+
+select.form-control.input_field {
+  /* margin-left: 30px; */
+}
+
+.btn_search {
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: 'Open Sans';
+  color: #fff;
+  background: #ff6633;
+}
+
+.btn_search:hover{
+    color: #ff6633;
+    background: #fff;
+    transition: ease-in 0.4s;
+}
+
+.column img {
+  opacity: 0.4;
+}
+.column img:hover {
+  opacity: 1;
+  transition: ease-in 0.4s;
+}
+
+.result_section{
+    width: 100%;
+    float: left;
+    background: url(../img/result_bg.png) no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    display: none;
+    top: 20em;
+}
+
+.table_result th {
+  background: #099;
+  color: #fff;
+  text-align: center;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-size: 16px;
+  font-family: 'Open Sans';
+  font-weight: normal;
+  border-bottom: none !important;
+}
+
+.btn_reserve {
+  border-radius: 0;
+  font-size: 16px;
+  font-family: 'Open Sans';
+  color: #000;
+  background: #ff6633;
+}
+
+.table_result tr {
+  border-top: 2px solid #099 !important;
+}
+
+.table_result {
+  border: solid 2px #099;
+  background: #fff;
+}
+
+#with_login{display: none;}
+
+.menu1{
+    list-style-type: none;
+    position: relative;
+    padding: 0;
+}
+.menu1 li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.menu1 li p{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Open Sans';
+}
+.menu1 li a{
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Open Sans';
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+}
+.menu1 li a:hover{
+    background: transparent;
+    color: #fff;
+}
+
+.menu1 li a img {
+  width: 76%;
+}
+
+.result {
+  font-size: 18px;
+  color: #fff;
+  font-family: 'Open Sans';
+}
